@@ -1,0 +1,1 @@
+// HeatData.attachSchema(schema.heatData);

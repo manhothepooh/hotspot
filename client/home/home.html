@@ -1,0 +1,92 @@
+<template name="home">
+  <div class="home-big-container">
+
+    <div class="home-medium-container">
+
+
+      <h1>Live</h1>
+      <div class="home-container">
+        {{#each deviceLive}}
+          <div class="device-container">
+            <div class="device-wrapper">
+              {{#each heatRate}}
+                <div class="device-grid" style="background-color: rgb({{bgcolorR}}, 0, {{bgcolorB}})">
+                  <p>{{bgcolorR}}</p>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        {{/each}}
+        <!-- {{#each deviceLive}}
+          <div class="device-container">
+            <div class="device-wrapper">
+              {{#each heatRate}}
+                <div class="device-grid" style="background-color: rgb({{bgcolorR}}, 0, {{bgcolorB}})">
+                  <p>{{bgcolorR}}</p>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        {{/each}} -->
+      </div>
+    </div>
+
+    <div class="home-medium-container">
+
+      <h1>Cumulative</h1>
+      <div class="home-container">
+        <!-- {{#each deviceLive}} -->
+          <div class="device-container">
+            <div class="device-wrapper">
+              {{#each heatRateCulminated}}
+                <div class="device-grid" style="background-color: rgb({{bgcolorR}}, 0, {{bgcolorB}})">
+                  <p>{{bgcolorR}}</p>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        <!-- {{/with}} -->
+        <!-- {{#each deviceLive}}
+          <div class="device-container">
+            <div class="device-wrapper">
+              {{#each heatRate}}
+                <div class="device-grid" style="background-color: rgb({{bgcolorR}}, 0, {{bgcolorB}})">
+                  <p>{{bgcolorR}}</p>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        {{/each}} -->
+      </div>
+    </div>
+    <div class="home-medium-container">
+
+      <h1>Flow rate</h1>
+      <div class="home-container">
+        <!-- {{#each deviceLive}} -->
+          <div class="device-container">
+            <div class="device-wrapper">
+              {{#each heatRateFlow}}
+                <div class="device-grid" style="background-color: rgb({{bgcolorR}}, 0, {{bgcolorB}})">
+                  <p>{{bgcolorR}}</p>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        <!-- {{/with}} -->
+        <!-- {{#each deviceLive}}
+          <div class="device-container">
+            <div class="device-wrapper">
+              {{#each heatRate}}
+                <div class="device-grid" style="background-color: rgb({{bgcolorR}}, 0, {{bgcolorB}})">
+                  <p>{{bgcolorR}}</p>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        {{/each}} -->
+      </div>
+    </div>
+
+  </div>
+</template>
